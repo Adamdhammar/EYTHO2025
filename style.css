@@ -836,7 +836,7 @@ footer {
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
     * {
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 
     .h2-contact-us {

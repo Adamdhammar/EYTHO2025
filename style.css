@@ -1,0 +1,878 @@
+/* ========== Variables ========== */
+@font-face {
+    font-family: Poppins-regular;
+    src: url(assets/font/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-bold;
+    src: url(assets/font/Poppins/Poppins-Bold.ttf);
+}
+
+/* ========== Website Settings ========== */
+
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 1vw;
+}
+
+main {
+    /* height: 1000vh; */
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+  /* Track */
+::-webkit-scrollbar-track {
+    /* border-radius: 10px; */
+    background-color: white;
+}
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #BF1F26; 
+    border-radius: 10px;
+}
+
+* {
+    /* border: 1px solid red; */
+    font-family: Poppins-regular;
+}
+
+/* ========== Header ==========  */
+
+.header {
+    background-color: white;
+    padding: 2vh 3.5vw 2vh 3.5vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999999;
+    border-bottom: 2px solid gray;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.header.hide {
+    transform: translateY(-100%);
+}
+
+.div-header {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 5vw; */
+}
+
+.logo-and-text {
+    width: 15vw;
+    height: auto;
+}
+
+nav {
+    align-content: center;
+}
+
+nav > *:not(.a-pendaftaran) {
+    margin: 0;
+    color: black;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin: 0 1vw;
+    font-weight: bold;
+}
+
+nav > a:hover {
+    color: #ED3323;
+    cursor: pointer;
+}
+
+.a-pendaftaran {
+    color: #ED3323;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    /* font-family: Poppins-black; */
+    border: 3px solid #ED3323;
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* ========== Main ==========  */
+/* .image-home {
+    min-width: 500px;
+    width: 49%;
+    height: auto;
+    object-fit: contain;
+} */
+
+.div-main-home {
+    /* background-image: url(assets/images/main-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    height: auto;
+    margin-top: 5vh;
+    position: relative;
+}
+
+.main-background {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -1;
+}
+
+.div-text-and-button {
+    position: absolute;
+    width: 44%;
+    top: 8vw;
+    left: 5%;
+}
+
+.div-line-and-text {
+    display: flex;
+    align-items: center;
+}
+
+.div-line-and-text > hr {
+    width: 5vw;
+    margin: 0 10px 0 0;
+    background-color: white;
+    height: 1px;
+}
+
+.div-line-and-text > h3 {
+    color: white;
+}
+
+.div-button {
+    display: flex;
+}
+
+.h1-home {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    font-family: Poppins-bold;
+}
+
+.p-home {
+    color: white;
+    margin: 20px 0 20px 0;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.a-register-home {
+    color: white;
+    background-color: #BF1F26;
+    text-decoration: none;
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+    align-self: center;
+    border-radius: 5px;
+    margin-right: 30px;
+    font-family: Poppins-bold;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+.a-read-more-home {
+    border: 3px solid #BF1F26;
+    background-color: white;
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+
+    color: #BF1F26;
+    border-radius: 5px;
+    font-family: Poppins-bold;
+    font-size: 1.2rem;
+    height: auto;
+    text-decoration: none;
+}
+
+.a-read-more-home:hover {
+    cursor: pointer;
+}
+
+/* ========== div banner ========== */
+.div-main-banner {
+    padding: 0px 0px 50px 0px;
+    margin-top: -70px;
+    /* border: 1px solid red; */
+}
+
+.h1-title-banner {
+    font-family: Poppins-bold;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.image-banner {
+    /* min-width: 500px; */
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+}
+
+.div-banner-and-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.div-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.div-group-text {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.sub-div-text-more-width {
+    width: 85% !important
+}
+
+.sub-div-text {
+    width: 20%;
+}
+
+.sub-div-text > * {
+    margin: 0;
+}
+
+.banner-text-right-align {
+    text-align: right;
+}
+
+.div-decoration-banner {
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.div-decoration-banner > * {
+    /* border: 1px solid red; */
+    position: absolute;
+}
+
+/* ========== PRIZE ========== */
+
+* {
+    /* border: 1px solid red; */
+
+}
+
+.div-main-prize {
+    /* display: flex; */
+    /* align-items: center; */
+    /* height: 100vh; */
+    position: relative;
+    /* height: 100%; */
+}
+
+.div-text-and-image {
+    position: absolute;
+    display: flex;
+    top: 6vh;
+    /* left: 5%; */
+    padding-right: 4vw;
+}
+
+.div-text-and-button-prize {
+    width: 70%;
+    padding-left: 5vw;
+}
+
+.prize-image {
+    width: 35vw;
+    height: auto;
+    margin-left: 100px;
+    z-index: 2;
+}
+
+.prize-background {
+    width: 100%;
+    height: auto;
+}
+
+.title-prize {
+    color: #BF1F26;
+    font-family: Poppins-bold;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.description-prize {
+    font-family: Poppins-regular;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== Cube ========== */
+.cube-1 {
+    left: 0;
+    top: 0;
+    width: 5%;
+    height: auto;
+    margin-left: 10px;
+}
+
+.cube-2 {
+    right: 0;
+    width: 10%;
+    margin-right: 25px;
+    height: auto;
+}
+
+.cube-3 {
+    bottom: 0;
+    width: 12%;
+    height: auto;
+}
+
+.cube-4 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5%;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* ========== DAFTAR ========== */
+
+* {
+    /* border: 1px solid red; */
+}
+
+.div-main-daftar {
+    position: relative;
+}
+
+.title-daftar {
+    font-size: 2.5rem;
+    /* width: 75%; */
+    margin: 0 0 20px 0;
+    font-family: Poppins-bold;
+}
+
+.daftar-background {
+    width: 100%;
+    height: auto;
+}
+
+.sub-div-main-daftar {
+    position: absolute;
+    display: flex;
+    height: auto;
+    bottom: 0;
+    /* border: 1px solid red; */
+}
+
+* {
+    /* border: 1px solid red; */
+}
+
+.div-daftar-left-side > * {
+    margin-left: 13vw;
+    /* width: 50%; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+}
+
+.div-text-daftar-left-side {
+    /* width: 100%; */
+}
+
+.div-title-left-side {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 10px;
+}
+
+.div-title-left-side > * {
+    color: #BF1F26;
+    font-family: poppins-bold;
+    margin: 0;
+}
+
+.hr-daftar {
+    width: 50px;
+    height: 3px;
+    background-color: #BF1F26;
+}
+
+.phone-daftar {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    bottom: 0;
+    margin-bottom: 7px;
+    /* margin-top: 70px; */
+}
+
+.div-daftar-right-side {
+    width: fit-content;
+    /* border: 1px solid red; */
+    padding-bottom: 80px;
+    padding-left: 50px;
+}
+
+.div-keunggulan {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+* {
+    /* border: 1px solid red; */
+}
+
+.div-online,
+.div-fleksibel {
+    background-color: white;
+    width: 36%;
+    padding: 1vw;
+    border: 2px solid #BF1F26;
+    border-radius: 20px;
+}
+
+.daftar-icon,
+.fleksibel-icon {
+    width: 20%;
+    border-radius: 100%;
+    height: auto;
+}
+
+.div-decoration-daftar {
+    /* border: 1px solid red; */
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.cube-5 {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 5%;
+    height: auto;
+    /* bottom: 0; */
+}
+
+.cube-6 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 5%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.cube-7 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 5%;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* ========== CONTACT US ========== */
+
+* {
+    /* border: 1px solid red; */
+}
+
+.div-main-contact-us {
+    display: flex;
+    /* justify-content: center; */
+    gap: 70px;
+    padding: 7vw;
+    /* border: 1px solid red; */
+}
+
+.div-left-side-contact-us {
+    /* width: 70%; */
+}
+
+.div-right-sided-contact-us {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.h2-contact-us {
+    color: #BF1F26;
+    font-family: Poppins-bold;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.p-contact-us {
+    text-align: justify;
+}
+
+.button-kirim-pesan-contact-us {
+    color: white;
+    background-color: #BF1F26;
+    text-decoration: none;
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+    align-self: center;
+    border-radius: 5px;
+    margin-right: 30px;
+    font-family: Poppins-bold;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+.div-form-contact-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-contact-us {
+    width: 80%;
+    height: auto;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.5rem;
+    margin: 20px 0 10px 0;
+    font-family: Poppins-bold;
+}
+
+input {
+    background-color: rgb(234, 234, 234);
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    width: auto;
+}
+
+textarea {
+    background-color: rgb(234, 234, 234);
+    padding: 20px;
+    width: auto;
+    height: 150px;
+    border-radius: 20px;
+    border: none;
+    resize: none;
+    margin-bottom: 50px;
+}
+
+.div-location-contact-us,
+.div-phone-number-contact-us,
+.div-email-contact-us {
+    display: flex;
+    align-items: center;
+}
+
+.div-location-contact-us > img,
+.div-phone-number-contact-us > img,
+.div-email-contact-us > img {
+    width: 20px;
+    height: 20px;
+}
+
+.div-location-contact-us > p,
+.div-phone-number-contact-us > p,
+.div-email-contact-us > p {
+    margin: 10px;
+}
+
+/* ========== FOOTER ========== */
+
+* {
+    /* border: 1px solid red; */
+}
+
+footer {
+    padding: 50px;
+    border-top: 2px solid black;
+    /* background-color: #BF1F26; */
+}
+
+.div-main-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-div-footer {
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: white; */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.div-navigation-footer {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center   ; */
+}
+
+.div-navigation-footer > a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.div-navigation-footer > a:hover {
+    color: #ED3323;
+    cursor: pointer;
+}
+
+.div-navigation-footer > hr {
+    background-color: black;
+    width: 100%;
+}
+
+.div-sub-contact-info-footer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.title-contact-us-footer {
+    text-align: center;
+}
+
+.div-contact-info-footer {
+    width: 45%;
+}
+
+.p-footer {
+    text-align: justify;
+}
+
+.div-image-and-text-footer {
+    width: 20%;
+}
+
+.logo-footer {
+    width: 100%;
+}
+
+.hr-footer {
+    background-color: black;
+    width: 100%;
+}
+
+.copyright-footer {
+    text-align: center;
+}
+
+/* ========== LOCATION ========== */
+.div-main-location {
+    padding: 50px;
+}
+
+.div-main-location > h1 {
+    text-align: center;
+    font-family: Poppins-bold;
+    margin-bottom: 50px;
+    font-size: 3rem;
+}
+
+.iframe-location {
+    width: 100%;
+    height: 400px;
+}
+
+/* ========== COMPETITION ========== */
+
+* {
+    /* border: 1px solid red; */
+}
+.div-main-competition {
+    background-color: rgb(239, 239, 239);
+    padding: 100px 20px;
+}
+
+.title-competition-part {
+    font-family: Poppins-bold;
+    font-size: 3.5rem;
+    margin: 0 0 0 50px;
+}
+
+.p-competition-part {
+    margin: 0 0 0 50px;
+    font-size: 2rem;
+}
+
+.div-competition-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.title-competition {
+    font-family: Poppins-bold;
+    font-size: 2rem;
+    margin: 50px 0 20px 10%;
+}
+
+.div-competition {
+    display: flex;
+    width: 70%;
+    background-color: white;
+    padding: 2vw;
+    border-radius: 20px;
+}
+
+.image-competition {
+    width: 20vw;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 5vw;
+}
+
+.p-competition-description {
+    text-align: justify;
+    margin: 0 0 30px 0;
+}
+
+.a-competition {
+    color: white;
+    background-color: #BF1F26;
+    text-decoration: none;
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+    align-self: center;
+    border-radius: 5px;
+    /* margin-right: 30px; */
+    font-family: Poppins-bold;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+/* ========== COMPETITION ========== */
+
+* {
+    /* border: 1px solid red; */
+}
+.div-main-competition-category {
+    margin: 100px 0 100px 0;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.h1-competition-category {
+    font-size: 3rem;
+    font-family: Poppins-bold;
+}
+
+.competition-category-image {
+    width: 50%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.div-text-and-button-competition-category {
+    width: 70%;
+    margin: auto;
+}
+
+.p-competition-category {
+    text-align: justify;
+    margin: 50px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    * {
+        border: 1px solid red;
+    }
+
+    .h2-contact-us {
+        font-size: 4rem;
+    }
+
+    .p-contact-us {
+        font-size: 2rem;
+    }
+
+    .p-home {
+        margin: 10px;
+    }
+
+    .description-prize {
+        margin-bottom: 30px;
+    }
+
+    .nav > *:not(.a-pendaftaran) {
+        font-size: 3rem;
+    }
+
+    .a-read-more-home {
+        padding: 10px;
+    }
+
+    .p-competition-description {
+        margin-bottom: 20px;
+    }
+
+    .div-main-contact-us {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    label {
+        font-size: 2rem;
+    }
+}
